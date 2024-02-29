@@ -1,0 +1,8 @@
+@media screen and (max-width:1200px) {
+    #first-nav-bar{
+       display: none;
+    }
+    #second-nav-bar{
+        display: flex;
+    }
+}
