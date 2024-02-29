@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fabrice-portifolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaQueries.css" />
+	</head>
+	<body>
+		<nav id="first-nav-bar">
+			<div class="name">Fabrice T</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="about">About</a></li>
+					<li><a href="Experience">Experience</a></li>
+					<li><a href="Project">Project</a></li>
+					<li><a href="Contact">Contact</a></li>
+					<li><a href="Contact">Login</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<nav id="second-nav-bar">
+			<div class="name">Fabrice T</div>
+			<div class="second-nav-menu">
+				<div class="second-nav-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<li><a href="#about" onclick="toggleMenu()">About</a></li>
+					<li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
+					<li><a href="Project" onclick="toggleMenu()">Project</a></li>
+					<li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
+					<li><a href="Contact" onclick="toggleMenu()">Login</a></li>
+				</div>
+			</div>
+		</nav>
+
+		<section id="profile">
+			<div class="section-pic-container">
+				<img src="./Media/fabrice.png" alt="Fabrice's Image" />
+			</div>
+			<div class="section-text">
+				<p class="section-text-p1">Hello, I'am</p>
+				<h1 class="title">Fabrice TUYIZERE</h1>
+				<p class="section-text-p2">Frontend Developer</p>
+
+				<div class="btn-container">
+					<button
+						class="btn
+						btn-color-2"
+						onclick="window.open('./Media/CV.pdf')"
+					>
+						Download CV
+					</button>
+					<button class="btn btn-color-1" onclick="location.href='./#contact'">
+						Contact Info
+					</button>
+				</div>
+				<div class="socials-icons-container">
+					<img
+						src="./Media/linkedin.png"
+						alt="linkedIn profile"
+						class="icon"
+						onclick="location.href='https://linkedin.com/'"
+					/>
+					<img
+						src="./Media/github.png"
+						alt="gitHub profile"
+						class="icon"
+						onclick="location.href='https://github.com/brice2k/my-brand-Fabrice'"
+					/>
+				</div>
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
