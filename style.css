@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap");
 
 * {
-	background-color:#cff1f5;
+	
 	margin: 0;
 	padding: 0;
 }
 
 body {
-    
+    background-color:#E6F9FB;
 	font-family: "Poppins", sans-serif;
 }
 html {
@@ -17,7 +17,7 @@ html {
 }
 
 p {
-	color: rgb(85, 85, 85, green, blue);
+	color: rgb(85, 85, 85,);
 }
 
 /************ Transitions ************************/
@@ -162,7 +162,7 @@ section {
 	width: 400px;
 	margin: auto 0;
 }
-.section-pic-container img {
+.profilePic{
 	width: auto;
 	border-radius: 45%;
 }
@@ -207,6 +207,7 @@ section {
 /* buttons */
 
 .btn-container {
+
 	display: flex;
 	justify-content: center;
 	gap: 2rem;
@@ -251,3 +252,112 @@ section {
  border: rgb(255,255,255) 0.1rem solid;
 
 }
+
+
+
+/* About section styling */
+
+#About{
+	position: relative;
+}
+
+.about-container{
+	gap :2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+.about-details-container{
+	
+	justify-content: center;
+	flex-direction: column;
+}
+
+.about-container, .about-details-container{
+	display: flex;
+}
+
+.about-profile-pic{
+	border-radius: 2rem;
+}
+
+.down{
+	position: absolute;
+	right: -5rem;
+	bottom: 2.5rem;
+	background: none;
+}
+
+
+.details-container{
+	
+	padding: 1rem;
+	flex: 1;
+	background:white;
+	border: #333333 solid;
+	border-color: rgb(163,163,163);
+	text-align: center;
+	border-radius: 2rem;
+}
+
+.section-container{
+	gap: 4rem;
+	height: 80%;
+
+}
+.details-container p,img, h3 {
+    background-color: white; /* or any other color you want */
+}
+
+.about-profile-pic{
+	width: 380px;
+	height: 400px;
+	 object-fit: cover;
+}
+.break{
+	display: none;
+	width: 100%;
+	border: #333333 0.2rem solid;
+
+	height:auto;
+	background-color: black;
+	margin-bottom: 2rem;
+}
+
+
+/* Experience part */
+#Experience{
+	position: relative;
+}
+
+.details-title{
+	font-weight: 600;
+	color: #333333;
+	font-size: 1.75rem;
+	margin-bottom:2rem
+}
+
+.experience-all-components-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.article-container{
+	display: flex;
+	text-align: initial;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 2.5rem;
+	justify-content: space-around;
+}
+
+article{
+	display: flex;
+	width: 10rem;
+	justify-content: space-around;
+	gap: 0.75rem;
+}
+
+article.icon{
+	cursor: default;
+} 
