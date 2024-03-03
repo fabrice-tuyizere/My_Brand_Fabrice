@@ -402,16 +402,19 @@ article.icon {
 
 
 .All-contact-container {
-	margin-top: 2rem;
+	margin-top: 4rem;
 	display: flex;
 	height: 80%;
+
 	min-height: fit-content;
 }
 
 .text-container {
+	padding-top: -2rem;
+
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: initial; */
 	text-align: center;
 	width: 50%;
 	gap: 2em;
@@ -425,7 +428,7 @@ article.icon {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	gap: 0.75rem;
+	gap: 0.5rem;
 	text-align: center;
 }
 
@@ -494,7 +497,29 @@ label {
 }
 #input-field{
 
-	
+	display: inline-block;
 	width: 80%;
 	align-items: left;
+	margin-left: 0.5rem;
+}
+
+.btn-color3{
+	display: inline-block;
+	font-weight: 600;
+	transition: all 300ms ease;
+	padding: 3rem;
+	width: 8rem;
+	border-radius: 2rem;
+}
+
+
+input[type=submit] {
+ width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
