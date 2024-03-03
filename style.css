@@ -3,13 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap");
 
 * {
-	
 	margin: 0;
 	padding: 0;
 }
 
 body {
-    background-color:#E6F9FB;
+	background-color: #e6f9fb;
 	font-family: "Poppins", sans-serif;
 }
 html {
@@ -17,7 +16,7 @@ html {
 }
 
 p {
-	color: rgb(85, 85, 85,);
+	color: rgb(85, 85, 85);
 }
 
 /************ Transitions ************************/
@@ -116,7 +115,7 @@ a:hover {
 second-nav-icon.open span:first-child {
 	transform: rotate(45deg) translate(10px, 5px);
 }
-second-nav-icon.open span:nth-child(20) {
+second-nav-icon.open span:nth-child(2) {
 	opacity: 0;
 }
 second-nav-icon.open span:last-child {
@@ -162,7 +161,7 @@ section {
 	width: 400px;
 	margin: auto 0;
 }
-.profilePic{
+.profilePic {
 	width: auto;
 	border-radius: 45%;
 }
@@ -181,7 +180,7 @@ section {
 }
 
 .section-text-p2 {
-    color: #424704;
+	color: #424704;
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
 }
@@ -207,7 +206,6 @@ section {
 /* buttons */
 
 .btn-container {
-
 	display: flex;
 	justify-content: center;
 	gap: 2rem;
@@ -240,109 +238,104 @@ section {
 	cursor: pointer;
 }
 
-.btn-color-1:hover{
-    background: rgb(0,0,0);
-
+.btn-color-1:hover {
+	background: rgb(0, 0, 0);
 }
 
-.btn-color-2{
-    background: none;
+.btn-color-2 {
+	background: none;
 }
-.btn-color-2:hover{
- border: rgb(255,255,255) 0.1rem solid;
-
+.btn-color-2:hover {
+	border: rgb(255, 255, 255) 0.1rem solid;
 }
-
-
 
 /* About section styling */
 
-#About{
+#About {
 	position: relative;
 }
 
-.about-container{
-	gap :2rem;
+.about-container {
+	gap: 2rem;
 	margin-bottom: 2rem;
 	margin-top: 2rem;
+	width: auto;
 }
-.about-details-container{
-	
+.about-details-container {
 	justify-content: center;
 	flex-direction: column;
 }
 
-.about-container, .about-details-container{
+.about-container,
+.about-details-container {
 	display: flex;
 }
 
-.about-profile-pic{
+.about-profile-pic {
 	border-radius: 2rem;
 }
 
-.down{
+.down {
 	position: absolute;
 	right: -5rem;
 	bottom: 2.5rem;
 	background: none;
 }
 
-
-.details-container{
-	
+.details-container {
 	padding: 1rem;
 	flex: 1;
-	background:white;
+	background: white;
 	border: #333333 solid;
-	border-color: rgb(163,163,163);
+	border-color: rgb(163, 163, 163);
 	text-align: center;
 	border-radius: 2rem;
 }
 
-.section-container{
+.section-container {
 	gap: 4rem;
 	height: 80%;
-
 }
-.details-container p,img, h3 {
-    background-color: white; /* or any other color you want */
+.details-container p,
+img,
+h3 {
+	background-color: white; /* or any other color you want */
 }
 
-.about-profile-pic{
+.about-profile-pic {
 	width: 380px;
 	height: 400px;
-	 object-fit: cover;
+	object-fit: cover;
 }
-.break{
+.break {
 	display: none;
 	width: 100%;
 	border: #333333 0.2rem solid;
 
-	height:auto;
+	height: auto;
 	background-color: black;
 	margin-bottom: 2rem;
 }
 
-
 /* Experience part */
-#Experience{
+#Experience {
 	position: relative;
 }
 
-.details-title{
+.details-title {
 	font-weight: 600;
 	color: #333333;
 	font-size: 1.75rem;
-	margin-bottom:2rem
+	margin-bottom: 2rem;
 }
 
-.experience-all-components-container{
+.experience-all-components-container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
 
-.article-container{
+.article-container {
 	display: flex;
 	text-align: initial;
 	flex-wrap: wrap;
@@ -351,13 +344,157 @@ section {
 	justify-content: space-around;
 }
 
-article{
+article {
 	display: flex;
 	width: 10rem;
 	justify-content: space-around;
 	gap: 0.75rem;
 }
 
-article.icon{
+article.icon {
 	cursor: default;
-} 
+}
+
+/* projects style */
+
+#Project {
+	position: relative;
+}
+
+.color-container {
+	border-color: rgb(163, 163, 163);
+}
+
+.project-pic {
+	border-radius: 2em;
+	width: 50%;
+	height: 50%;
+}
+
+#Contact {
+	padding-top: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 70vh;
+}
+.contact-info-upper-container {
+	display: flex;
+	justify-content: center;
+	border: rgb(53, 53, 53) 0.2rem solid;
+	border-radius: 2rem;
+	border-color: rgb(163, 163, 163);
+	background: (255, 255, 255);
+	margin: 2rem auto;
+	padding: 0.5rem;
+}
+
+.contact-info-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 1rem;
+}
+
+/* part2 contact page */
+
+
+
+.All-contact-container {
+	margin-top: 2rem;
+	display: flex;
+	height: 80%;
+	min-height: fit-content;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+	gap: 2em;
+	/* border: rgb(53, 53, 53) 0.2rem solid;
+	border-radius: 2rem;
+	border-color: rgb(163, 163, 163); */
+}
+
+.text-and-icon {
+	padding-top: 2.5rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 0.75rem;
+	text-align: center;
+}
+
+.text-and-icon img {
+	height: 1.5rem;
+}
+
+.email-div {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 1.5rem;
+}
+
+.email-text {
+	text-align: left;
+}
+form{
+	display: block;
+}
+
+.form-container{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.form-sec-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	/* border: rgb(53, 53, 53) 0.2rem solid;
+	border-radius: 2rem;
+	border-color: rgb(163, 163, 163); */
+}
+
+
+.form-container {
+    margin: auto; 
+    width: 80%; 
+	
+	
+    padding: 2rem; /* Add padding for better visual appeal */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%; 
+	background: white;
+    padding: 0.5rem; 
+    border-radius: 0.5rem; 
+    border: 1px solid #333333; /* Border color */
+    margin-bottom: 1rem; /* Add space between inputs */
+}
+
+label {
+	padding-top: 1.3rem;
+	padding-left: 2.5rem;
+    text-align: left;
+    display: block;
+	padding-bottom:1rem;
+	
+	
+}
+#input-field{
+
+	
+	width: 80%;
+	align-items: left;
+}
