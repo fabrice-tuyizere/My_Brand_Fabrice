@@ -546,8 +546,13 @@ text-align: center;
 gap: 2rem;
 
 }
+#Login .title{
+	margin-top: -1rem;
+} 
 
-
+.login-title{
+	margin-top: 2rem;
+}
 
 
 .img-container{
@@ -568,6 +573,7 @@ gap: 2rem;
     border: 1px solid #333333; /* Border color */
     margin-bottom: 1rem; /* Add space between inputs */
 }
+
 
 #Login input[type=submit] 
 {
