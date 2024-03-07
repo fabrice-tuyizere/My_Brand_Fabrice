@@ -1,8 +1,432 @@
-@media screen and (max-width:1200px) {
-    #first-nav-bar{
-       display: none;
-    }
-    #second-nav-bar{
-        display: flex;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap");
+
+@media screen and (max-width: 800px) {
+	#profile {
+		height: 83vh;
+		margin-bottom: auto;
+	}
+	.about-container {
+		flex-wrap: wrap;
+	}
 }
+
+@media only screen and (max-width: 1200px) {
+	#first-nav-bar {
+		display: none;
+	}
+	#second-nav-bar {
+		display: flex;
+	}
+	#Experience,
+	.experience-all-components-container {
+		margin-top: 2rem;
+	}
+	/* #profile, */
+	.section-container {
+		display: block;
+	}
+
+	#profile{
+		padding: auto auto;
+		height: fit-content;
+		margin-bottom:2rem;
+
+
+	}
+ #profile .section-pic-container{
+	margin-left: 2rem;
+	height: 350px;
+ }
+
+	.down {
+		display: none;
+	}
+
+	section,
+	.section-container {
+		height: fit-content;
+	}
+	section {
+		margin: 0 5%;
+	}
+	#About {
+		display: blo;
+		
+	}
+	#About .section-pic-container {
+		height: 275px;
+		width: 275px;
+		margin: auto auto;
+		margin-top: 20px;
+		margin-bottom: 7rem;
+	}
+	
+	.about-details-container{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.footer {
+		height: 60vh;
+	}
+	#profile {
+		height: 83vh;
+		margin-bottom: 0;
+	}
+	article {
+		font-size: 1rem;
+	}
+	footer nav {
+		height: fit-content;
+		margin-bottom: 2rem;
+	}
+	.about-container,
+	.about-container,
+	.All-contact-container {
+		flex-wrap: wrap;
+	}
+
+	.details-title {
+		font-size: 1.2rem;
+	}
+	.section-pic-container {
+		width: auto;
+		height: 46h;
+		justify-content: center;
+	}
+	.name {
+		font-size: 1.25rem;
+	}
+	.title {
+		font-size: 2rem;
+	}
+
+	.section-text-p2 {
+		font-size: 1.75rem;
+	}
+	.text-container {
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.section-pic-container {
+		width: 245px;
+		height: 245px;
+		justify-content: center;
+		margin-top: -2rem;
+		margin-left: 2rem;
+	}
+	.section-text {
+		padding-top: 2rem;
+	}
+	.title {
+		font-size: 1.5rem;
+	}
+	.section-text-p2 {
+		font-size: 1rem;
+	}
+	.btn-container,
+	.socials-icons-container {
+		width: 90%;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn {
+		font-weight: 600;
+		font-size: 0.5rem;
+		width: 7rem;
+	}
+
+	#About .section-pic-container img {
+		width: 245px;
+		height: 259px;
+	}
+	#About {
+		margin-top: -7rem;
+	}
+	.section-pic-container {
+		padding-top: 3rem;
+		margin-top: 2rem;
+	}
+	.section-container {
+		margin-top: -10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 2rem;
+	}
+	.about-details-container {
+		margin-top: -5rem;
+	}
+	.about-container {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		gap: 1rem;
+
+		justify-content: center;
+	}
+	.about-details-container .text-container {
+		display: inline;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	#Experience {
+		margin-left: 1.6rem;
+	}
+	#Experience .title {
+		font-size: 3rem;
+	}
+	#Projects .experience-all-components-container {
+		width: 100%;
+		display: flex;
+		height: fit-content;
+		align-items: center;
+		margin-left: 1.8rem;
+	}
+	.project-btn {
+		font-size: 1rem;
+		width: 8rem;
+	}
+	#Contact {
+		margin-bottom: 15rem;
+	}
+
+	.All-contact-container {
+		margin-top: 2rem;
+		display: block;
+		margin: 0.5rem;
+	}
+	.All-contact-container p {
+		font-weight: 600px;
+		color: #000;
+		font-size: 1.5rem;
+	}
+	.text-and-icon .section-text-p1 {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		font-weight: 600px;
+	}
+	.like-icon {
+		height: 0.8rem;
+	}
+	.email-text p {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		font-weight: 600px;
+		color: rgb(12, 36, 36);
+	}
+	.email-text p:last-child {
+		font-weight: bold;
+	}
+	.form-sec-container {
+		width: 100%;
+	}
+	.form-container {
+		width: 100%;
+		margin-left: -2rem;
+	}
+	#Contact input[type="text"]::placeholder,
+	#Contact input[type="email"]::placeholder {
+		font-size: 1rem;
+		font-weight: 600px;
+		color: #000;
+	}
+	footer {
+		height: 80vh;
+	}
+
+	.footer-container ul {
+		display: block;
+		margin: 2rem auto;
+	}
+	.last-content {
+		display: block;
+		margin-top: -2rem;
+		margin-top: 0;
+		align-items: center;
+		align-content: center;
+	}
+	.footer-contact {
+		width: auto;
+		flex-wrap: wrap;
+		background: inherit;
+	}
+}
+
+/* login Media queries */
+
+
+
+
+
+
+/* on tablets */
+
+@media screen and (max-width: 920px) {
+	#Login {
+		width: 100%;
+		height: fit-content;
+	}
+	#Login .title {
+		font-size: 3rem;
+	
+	}
+	
+	.login-container {
+		
+		margin-top: 23rem;
+		margin-left: 70px ;
+		width: 80%;
+		height: fit-content;
+		margin-top: 5rem;
+	}
+	#Login input[type="text"],
+	#Login input[type="password"] {
+		width: calc(
+			80% - 2 * 0.5rem - 2 * 1px
+		); /* Subtracting padding and border */
+		padding: 1rem; /* Match the padding */
+		border: 1px solid #333333; /* Match the border */
+		height: 4rem;
+	}
+	#Login input[type="text"]::placeholder,
+	#Login input[type="Password"]::placeholder {
+		font-size: 2rem;
+		font-weight: 60px;
+		color: #000;
+	}
+
+	#Login input[type="submit"] {
+		font-size: 2rem;
+		font-weight: bold;
+		color: wheat;
+	}
+	#Login form {
+		margin-bottom: 3rem;
+	}
+	.after-form {
+		justify-content: space-around;
+		width: 100%;
+		gap: 1rem;
+	}
+	.after-form > p,
+	#checkboxContainer > label {
+		font-weight: 600;
+		color: #333333;
+		font-size: 1.75rem;
+	}
+	#checkboxContainer input[type="checkbox"] {
+  width: 4em; /* Adjust the width */
+  height: 2em; /* Adjust the height */
+}
+
+.container hr {
+		width: 100%;
+		margin: auto;
+	}
+
+	.bottom-part{
+		margin-top:2rem ;
+
+	}
+	.bottom-part p{
+		font-size: 1.8rem;
+
+	}
+	.img-container{
+		height: 8rem;
+		width: 8rem;
+		margin-bottom: 1rem;
+	}
+	#Login input[type="text"],
+	#Login input[type="password"] {
+		width: calc(
+			80% - 2 * 0.5rem - 2 * 1px
+		); /* Subtracting padding and border */
+		padding: 1rem; /* Match the padding */
+		border: 1px solid #333333; /* Match the border */
+		height: 2rem;
+	}
+}
+
+
+
+
+/* telephones screens */
+
+@media screen and (max-width: 450px) {
+	#Login {
+		margin-top: 2rem;
+		text-align: left;
+		height: fit-content;
+	}
+.img-container{
+		height: 5rem;
+		width: 5rem;
+		margin-bottom: 1rem;
+	}
+	#Login .title {
+		font-size: 2.5rem;
+	}
+	.login-container {
+		display: flex;
+		justify-content: center;
+		margin:auto auto;
+
+		width: 100%;
+	}
+	.after-form {
+		gap: 1rem;
+		margin-right: auto 50%;
+	}
+	.after-form p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1rem;
+	}
+	#Login input[type="text"]::placeholder,
+	#Login input[type="Password"]::placeholder {
+		font-size: 1.2rem;
+		font-weight: 600px;
+		color: #000;
+	}
+	#Login input[type="text"],
+	#Login input[type="password"] {
+		width: calc(
+			80% - 2 * 0.5rem - 2 * 1px
+		); /* Subtracting padding and border */
+		padding: 0.5rem; /* Match the padding */
+		border: 1px solid #333333; /* Match the border */
+		height: 2rem;
+	}
+
+	.container hr {
+		width: 100%;
+		margin: auto;
+	}
+	.after-form > p,.bottom-part >p,
+	#checkboxContainer > label {
+		font-weight: 10px;
+		color: #333333;
+		font-size: 1rem;
+	}
+		#checkboxContainer input[type="checkbox"] {
+  width: 1em; /* Adjust the width */
+  height: 1em; /* Adjust the height */
+}
+#Login input[type="submit"] {
+		font-size: 1.3rem;
+		font-weight: bold;
+		color: wheat;
+	}
+	.after-form{
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+}
+

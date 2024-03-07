@@ -5,24 +5,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fabrice-portifolio</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="footer.css" />
+
 		<link rel="stylesheet" href="mediaQueries.css" />
+				<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
 		<nav id="first-nav-bar">
-			<div class="name">Fabrice T</div>
-			<div>
+<div class="footer-logo">
+		<img src="./Media/Fabrice-t-logo.jpeg" alt="ft logo" class="ft-logo">
+	</div>			<div>
 				<ul class="nav-links">
 					<li><a href="#About">About</a></li>
 					<li><a href="#Experience">Experience</a></li>
 					<li><a href="#Project">Project</a></li>
-					<li><a href="#Contact">Contact</a></li>
-					<li><a href="#Contact">Login</a></li>
+					<li><a href="#section-wrapper">Contact</a></li>
+					<li><a href="./login.html">Login</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<nav id="second-nav-bar">
-			<div class="name">Fabrice T</div>
+			<div class="footer-logo">
+		<img src="./Media/Fabrice-t-logo.jpeg" alt="ft logo" class="ft-logo">
+	</div>
 			<div class="second-nav-menu">
 				<div class="second-nav-icon" onclick="toggleMenu()">
 					<span></span>
@@ -33,21 +49,25 @@
 					<li><a href="#About" onclick="toggleMenu()">About</a></li>
 					<li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
 					<li><a href="#Project" onclick="toggleMenu()">Project</a></li>
-					<li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
-					<li><a href="#Contact" onclick="toggleMenu()">Login</a></li>
+					<li><a href="#section-wrapper" onclick="toggleMenu()">Contact</a></li>
+					<li><a href="./login.html" onclick="toggleMenu()">Login</a></li>
 				</div>
 			</div>
 		</nav>
 
 		<section id="profile">
 			<div class="section-pic-container">
-				<img src="./Media/fabrice.png" alt="Fabrice's Image" class="profilePic"/>
+				<img
+					src="./Media/fabrice.png"
+					alt="Fabrice's Image"
+					class="profilePic"
+				/>
 			</div>
 			<div class="section-text">
 				<p class="section-text-p1">Hello, I'am</p>
 				<h1 class="title">Fabrice TUYIZERE</h1>
 				<p class="section-text-p2">Frontend Developer</p>
-<div class="break"> <h1>hello</h1></div>
+				<div class="break"><h1>hello</h1></div>
 				<div class="btn-container">
 					<button
 						class="btn btn-color-2"
@@ -80,150 +100,450 @@
 			<h1 class="title">Bout me</h1>
 			<div class="section-container">
 				<div class="section-pic-container">
-					<img src="./Media/fabrice2ndPic.jpg" alt="fabrice second pic" class="about-profile-pic">
+					<img
+						src="./Media/fabrice2ndPic.jpg"
+						alt="fabrice second pic"
+						class="about-profile-pic"
+					/>
 				</div>
 				<div class="about-details-container">
 					<div class="about-container">
 						<div class="details-container">
-							<img src="./Media/exp-icon.png" alt="experience icon" class="icon">
-						<h3>EXperience</h3>
-						<p>3+ Years <br> Frontend Development</p>
+							<img
+								src="./Media/exp-icon.png"
+								alt="experience icon"
+								class="icon"
+							/>
+							<h3>EXperience</h3>
+							<p>
+								3+ Years <br />
+								Frontend Development
+							</p>
 						</div>
 
 						<div class="details-container">
-							<img src="./Media/icon2.png" alt="Edu background" class="icon">
-						<h3>Education</h3>
-						
-						<p>B.Sc, Bachelors Degree <br> University of Rwanda</p>
-						</div>
+							<img src="./Media/icon2.png" alt="Edu background" class="icon" />
+							<h3>Education</h3>
 
+							<p>
+								B.Sc, Bachelors Degree <br />
+								University of Rwanda
+							</p>
+						</div>
 					</div>
 
 					<div class="text-container">
-						Lorem ipsum dolor sit amet
-						 consectetur adipisicing elit. 
-						 Quo, veniam nobis, nisi dolorem inventore 
-						 consequatur veritatis alias, sint pariatur non error 
-						 cumque mollitia dolor 
-						 consectetur! Modi ipsam earum fugiat facere!
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, veniam
+						nobis, nisi dolorem inventore consequatur veritatis alias, sint
+						pariatur non error cumque mollitia dolor consectetur! Modi ipsam
+						earum fugiat facere!</p>
 					</div>
 				</div>
 			</div>
-<img src="./Media/arrow-down-icon.png" alt="Arrow Down icon" class="icon down" onclick="location.href='./#Experience'">
-			
+			<img
+				src="./Media/arrow-down-icon.png"
+				alt="Arrow Down icon"
+				class="icon down"
+				onclick="location.href='./#Experience'"
+			/>
 		</section>
 
 		<section id="Experience">
-		<p class="section-text-p1">Exprole more</p>
-	<h1 class="title">Experience</h1>
-	<div class="experience-all-components-container">
-		<div class="about-container">
-			<div class="details-container">
-				<h2 class="details-title">
-					Frontend Development
-				</h2>
-				<div class="article-container">
-					<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>HTML</h3>
-					<p>Experienced</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>CSS</h3>
-					<p>Experienced</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Java Script</h3>
-					<p>intermediate</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Type Script</h3>
-					<p>Basic</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Material UI</h3>
-					<p>Intermediate</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>SASS</h3>
-					<p>Basic</p>
-				</div>
-				</article>
-				
+			<p class="section-text-p1">Exprole more</p>
+			<h1 class="title">Experience</h1>
+			<div class="experience-all-components-container">
+				<div class="about-container">
+					<div class="details-container">
+						<h2 class="details-title">Frontend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>HTML</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>CSS</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Java Script</h3>
+									<p>intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Type Script</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Material UI</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>SASS</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="details-container">
+						<h2 class="details-title">Backend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>SQL</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Django</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Node JS</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Git</h3>
+									<p>Experience</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Express JS</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./Media/checkmark.png"
+									alt="check mark Icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Java Spring</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="details-container">
-				<h2 class="details-title">
-					Backend Development
-				</h2>
-				<div class="article-container">
-					<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>SQL</h3>
-					<p>Experienced</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Django</h3>
-					<p>Intermediate</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Node JS</h3>
-					<p>Basic</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Git </h3>
-					<p>Experience</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Express JS</h3>
-					<p>Intermediate</p>
-				</div>
-				</article>
-				<article>
-					<img src="./Media/checkmark.png" alt="check mark Icon" class="icon ">
-				<div>
-					<h3>Java Spring</h3>
-					<p>Basic</p>
-				</div>
-				</article>
-				
+			<img
+				src="./Media/arrow-down-icon.png"
+				alt="Arrow Down icon"
+				class="icon down"
+				onclick="location.href='./#Project'"
+			/>
+		</section>
+		<section id="Project">
+			<script src="script.js"></script>
+			<p class="section-text-p1">Browse My Recent</p>
+			<h1 class="title">Projects</h1>
+			<div class="experience-all-components-container">
+				<div class="about-container">
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./Media/Weather.png"
+								alt="Weather-pic"
+								class="project-pic"
+							/>
+						</div>
+						<h2 class="details-title">Project1</h2>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./Media/NewsAppimage.png"
+								alt="News-pic"
+								class="project-pic"
+							/>
+						</div>
+						<h2 class="details-title">Project 2</h2>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./Media/QuizApp.png"
+								alt="QUIZ-APP"
+								class="project-pic"
+							/>
+						</div>
+						<h2 class="details-title">Project 3</h2>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+			<img
+				src="./Media/arrow-down-icon.png"
+				alt="Arrow Down icon"
+				class="icon down"
+				onclick="location.href='./#Contact'"
+			/>
+		</section>
+	
+		<section id="section-wrapper" >
+			<p class="section-text-p1">Get in Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="box-wrapper">
+				<div class="info-wrapper">
+					<h2 class="info-title">Contact Information</h2>
+					<h4 class="info-sub-title">
+						Fill up the form and I will get back to you within 24 hours
+				</h4>
+					<ul class="info-details">
+						<li>
+							<i class="fas fa-phone-alt"></i>
+							<span> Phone: </span>
+							<a href="tel:+250786219722"> +250786219722 </a>
+						</li>
+						<li>
+							<i class="fas fa-paper-plane"></i>
+							<span> Email: </span>
+							<a href="mailto:brice2k1@gmail.com"> brice2k1@gmail.com</a>
+						</li>
+						<li>
+							<i class="fas fa-globe"></i>
+							<span> Website: </span> <a href="#"> My Web</a>
+						</li>
+					</ul>
+					<ul class="social-icons">
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="form-wrapper">
+					<form action="#" method="post">
+						<h2 class="form-title">Send me a message</h2>
+						<div class="form-fields">
+							<div class="form-group">
+								<input type="text" class="fname" placeholder="First Name" />
+							</div>
+							<div class="form-group">
+								<input type="text" class="lname" placeholder="Last Name" />
+							</div>
+
+							
+							<div class="form-group">
+								<input type="email" class="email" placeholder="Email" />
+							</div>
+							<div class="form-group">
+								<input type="number" class="phone" placeholder="phone" />
+							</div>
+							<div class="form-group">
+								<textarea name="message" class="phone" placeholder="Write your message" id=""></textarea>
+							</div>
+						</div>
+                        <input type="submit" value="Send message" class="submit-button">
+					</form>
+				</div>
+			</div>
+		</section>
+	<section id="footer">
+<footer>
+<div class="all-footer-content">	
+<div class="footer-first-div">
+	<p > Ready to work together?</p>
+	<h1>Start a Project</h1>
+</div>	
+<hr>
+<div class="footer-seccond-div">
+	<div class="footer-logo">
+		<img src="./Media/Fabrice-t-logo.jpeg" alt="ft logo" class="ft-logo">
 	</div>
-	<img src="./Media/arrow-down-icon.png" alt="Arrow Down icon" class="icon down" onclick="location.href='./#Project'">
+     <div class="footer-contact-info">
+		<div class="inside-footer">
+<img src="./Media/email.png" alt="" class="icon footer-icon">
+					<p>brice2k1@gmail.com</p>
+                    </div>
+					<div  class="inside-footer">
+					<img src="./Media/viber.png" alt="" class="icon call">
+					<p>0786219722/0732286228</p>
+					</div>
+					</div>
+					<div class="footer-socials">
+						<ul class="social-icons">
+						<li>
+							<a href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+					</div>
+<a href="#profile">
+	<div class="top">
+<i class="fa-solid fa-arrow-up"></i></a>
+<p>Top</p>
+
+	</div>
+
+</div>
+
+<div class="footer-last-div">
+	<div class="Copyright"> 
+		<div class="inside-copy">
+			<p>Copyright &#169; 2024 Fabrice T </p>
+</div>
+		<p>Privacy</p>
+		<p>Accessibility</p>
+
+	</div>
+	<p>Made In Rwanda </p>
+</div>
+</div>	
+	
+				<!-- <div class="last-content">
+				<div class="footer-contact"> 
+					
+					<div class="inside-footer">
+<img src="./Media/email.png" alt="" class="icon">
+					<p>brice2k1@gmail.com</p>
+                    </div>
+					<div  class="inside-footer">
+					<img src="./Media/viber.png" alt="" class="icon call">
+					<p>0786219722/0732286228</p>
+					</div>
+
+				</div>
+								<p>Copyright &#169; 2024 Fabrice T </p>
+
+				</div>
+	</footer> -->
 
 	</section>
-	<Section id="Projects"></Section>
-		<script src="script.js"></script>
+	
 	</body>
 </html>
