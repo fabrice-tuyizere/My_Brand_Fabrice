@@ -21,10 +21,23 @@
 	.experience-all-components-container {
 		margin-top: 2rem;
 	}
-	#profile,
+	/* #profile, */
 	.section-container {
 		display: block;
 	}
+
+	#profile{
+		padding: auto auto;
+		height: fit-content;
+		margin-bottom:2rem;
+
+
+	}
+ #profile .section-pic-container{
+	margin-left: 2rem;
+	height: 350px;
+ }
+
 	.down {
 		display: none;
 	}
@@ -37,17 +50,19 @@
 		margin: 0 5%;
 	}
 	#About {
-		margin-top: -7rem;
+		display: blo;
+		
 	}
 	#About .section-pic-container {
 		height: 275px;
 		width: 275px;
-		margin: auto 2rem;
+		margin: auto auto;
+		margin-top: 20px;
+		margin-bottom: 7rem;
 	}
-	#About .section-pic-container {
-		height: 270px;
-		width: 270px;
-		margin: 1rem auto 4rem;
+	
+	.about-details-container{
+		margin-top: 20px;
 	}
 }
 
@@ -243,49 +258,12 @@
 }
 
 /* login Media queries */
-/* telephones screens */
 
-@media screen and (max-width: 450px) {
-	#Login {
-		margin-top: 2rem;
-		text-align: left;
-		height: fit-content;
-	}
-	.login-container {
-		display: flex;
-		justify-content: center;
-		margin-top: 2rem;
-		width: 100%;
-	}
-	.after-form {
-		gap: 1rem;
-		margin-right: auto 50%;
-	}
-	.after-form p {
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 1rem;
-	}
-	#Login input[type="text"]::placeholder,
-	#Login input[type="Password"]::placeholder {
-		font-size: 1rem;
-		font-weight: 600px;
-		color: #000;
-	}
-	#Login input[type="text"],
-	#Login input[type="password"] {
-		width: calc(
-			80% - 2 * 0.5rem - 2 * 1px
-		); /* Subtracting padding and border */
-		padding: 0.5rem; /* Match the padding */
-		border: 1px solid #333333; /* Match the border */
-		height: 2rem;
-	}
 
-	.container hr {
-		width: 100%;
-		margin: auto;
-	}
-}
+
+
+
+
 /* on tablets */
 
 @media screen and (max-width: 920px) {
@@ -294,11 +272,13 @@
 		height: fit-content;
 	}
 	#Login .title {
-		font-size: 4rem;
+		font-size: 3rem;
 	
 	}
+	
 	.login-container {
-		margin-top: 5rem;
+		
+		margin-top: 23rem;
 		margin-left: 70px ;
 		width: 80%;
 		height: fit-content;
@@ -316,7 +296,7 @@
 	#Login input[type="text"]::placeholder,
 	#Login input[type="Password"]::placeholder {
 		font-size: 2rem;
-		font-weight: 10px;
+		font-weight: 60px;
 		color: #000;
 	}
 
@@ -362,4 +342,91 @@
 		width: 8rem;
 		margin-bottom: 1rem;
 	}
+	#Login input[type="text"],
+	#Login input[type="password"] {
+		width: calc(
+			80% - 2 * 0.5rem - 2 * 1px
+		); /* Subtracting padding and border */
+		padding: 1rem; /* Match the padding */
+		border: 1px solid #333333; /* Match the border */
+		height: 2rem;
+	}
 }
+
+
+
+
+/* telephones screens */
+
+@media screen and (max-width: 450px) {
+	#Login {
+		margin-top: 2rem;
+		text-align: left;
+		height: fit-content;
+	}
+.img-container{
+		height: 5rem;
+		width: 5rem;
+		margin-bottom: 1rem;
+	}
+	#Login .title {
+		font-size: 2.5rem;
+	}
+	.login-container {
+		display: flex;
+		justify-content: center;
+		margin:auto auto;
+
+		width: 100%;
+	}
+	.after-form {
+		gap: 1rem;
+		margin-right: auto 50%;
+	}
+	.after-form p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1rem;
+	}
+	#Login input[type="text"]::placeholder,
+	#Login input[type="Password"]::placeholder {
+		font-size: 1.2rem;
+		font-weight: 600px;
+		color: #000;
+	}
+	#Login input[type="text"],
+	#Login input[type="password"] {
+		width: calc(
+			80% - 2 * 0.5rem - 2 * 1px
+		); /* Subtracting padding and border */
+		padding: 0.5rem; /* Match the padding */
+		border: 1px solid #333333; /* Match the border */
+		height: 2rem;
+	}
+
+	.container hr {
+		width: 100%;
+		margin: auto;
+	}
+	.after-form > p,.bottom-part >p,
+	#checkboxContainer > label {
+		font-weight: 10px;
+		color: #333333;
+		font-size: 1rem;
+	}
+		#checkboxContainer input[type="checkbox"] {
+  width: 1em; /* Adjust the width */
+  height: 1em; /* Adjust the height */
+}
+#Login input[type="submit"] {
+		font-size: 1.3rem;
+		font-weight: bold;
+		color: wheat;
+	}
+	.after-form{
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+}
+
