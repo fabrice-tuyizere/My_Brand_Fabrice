@@ -547,8 +547,9 @@ text-align: center;
 gap: 2rem;
 
 }
-#Login .title{
-	margin-top: -1rem;
+.t1{
+	margin-bottom: 4rem;
+	color: #c23e54;
 } 
 
 .login-title{
@@ -561,7 +562,7 @@ gap: 2rem;
 	height: 80px;
 	background-color: inherit;
 	align-content: center;
-	margin-bottom: 1rem;
+	margin-bottom: 0PX
 }
 
 #Login input[type="text"],
@@ -1046,6 +1047,8 @@ border: none;
 		margin: 10px 0px;
 	}
 }
+
+
 
 
 	

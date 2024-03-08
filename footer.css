@@ -1,0 +1,184 @@
+/* footer stylying */
+
+#footer {
+	margin-top: 6rem;
+	height: 50vh;
+    min-height: fit-content;
+
+	background: linear-gradient(20deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+.all-footer-content {
+    padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.footer-first-div {
+	padding-top: -2.5rem;
+	height: 20vh;
+	gap: 1rem;
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.footer-second-div {
+	justify-content: center;
+	height: 15vh;
+	width: 100%;
+	display: block;
+	align-items: center;
+	align-content: center;
+}
+
+
+
+.ft-logo {
+	width: 10vh;
+	height: 10vh;
+	border-radius: 14px;
+
+	object-fit: cover;
+}
+.footer-logo {
+	border: #d9afd9 solid;
+	width: 10vh;
+	height: 10vh;
+	float: left;
+	margin-right: 2rem;
+	border-radius: 14px;
+}
+
+.footer-contact-info {
+	width: 10vh;
+	height: 10vh;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	float: left;
+	align-items: left;
+	align-content: center;
+	margin-right: 12rem;
+}
+
+.inside-footer {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+}
+
+.call {
+	height: 0.75rem;
+}
+.footer-icon {
+	height: 1rem;
+}
+
+.inside-footer p {
+	font-size: 0.8rem;
+	font-weight: 600px;
+}
+
+.social-icons {
+	list-style: none;
+	text-align: center;
+	margin: 20px 0px;
+}
+.social-icons li {
+	display: inline-block;
+}
+
+#footer .social-icons li {
+	background: none;
+	color: #fff;
+	padding: 15px;
+	font-size: 20px;
+	border-radius: 22%;
+	margin: 0px 5px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+
+#footer .social-icons li:hover {
+	background: #fff;
+	color: #000;
+}
+
+.footer-socials {
+	width: 30vh;
+	height: 10vh;
+    float: left;
+  
+    align-items: center;
+    align-content: center;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: left;
+}
+
+
+
+.subscribe label {
+    text-align: left;
+    margin-right: 0.5rem; /* Adjust as needed */
+}
+
+.subscribe input[type="email"] {
+    flex: 1;
+    border: none;
+    border-bottom: #000 solid;
+    display: inline; 
+    padding: 0.5rem; /* Add padding as needed */
+}
+
+.subscribe input[type="submit"] {
+    margin-left: 1rem; /* Add space between input field and submit button */
+    padding: 0.5rem 1rem;
+   height: 1rem;
+
+  
+}
+
+.footer-last-div {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+
+}
+
+.Copyright{
+   display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between; 
+}
+.inside-copy{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.footer-last-div p{
+    letter-spacing: 0.5;
+}
+
+.top{
+    float: right;
+}

@@ -269,16 +269,16 @@
 @media screen and (max-width: 920px) {
 	#Login {
 		width: 100%;
-		height: fit-content;
+		height: 150vh;
 	}
-	#Login .title {
+	.t1 {
 		font-size: 3rem;
 	
 	}
 	
 	.login-container {
 		
-		margin-top: 23rem;
+		margin-top: 2rem;
 		margin-left: 70px ;
 		width: 80%;
 		height: fit-content;
@@ -362,7 +362,7 @@
 	#Login {
 		margin-top: 2rem;
 		text-align: left;
-		height: fit-content;
+		height: 150vh;
 	}
 .img-container{
 		height: 5rem;
