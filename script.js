@@ -1,9 +1,3 @@
-function toggleMenu() {
-	const menu = document.querySelector(".menu-links");
-	const Icon = document.querySelector(".second-nav-icon ");
-	menu.classList.toggle("open");
-	Icon.classList.toggle("open");
-}
 
 const name = document.getElementById("name");
 const password = document.getElementById("password");

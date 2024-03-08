@@ -1,3 +1,30 @@
+
+
+
+
+
+
+
+
+
+function toggleMenu() {
+	const menu = document.querySelector(".menu-links");
+	const Icon = document.querySelector(".second-nav-icon ");
+	menu.classList.toggle("open");
+	Icon.classList.toggle("open");
+}
+
+
+
+
+
+
+
+
+
+
+
+
 const contactForm = document.getElementById("contactForm");
 const fname = document.getElementById("fname");
 const lname = document.getElementById("lname");
