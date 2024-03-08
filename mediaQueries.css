@@ -110,7 +110,11 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
+	#profile{
+		display: block;
+	}
+
 	.section-pic-container {
 		width: 245px;
 		height: 245px;
@@ -146,9 +150,12 @@
 	#About {
 		margin-top: -7rem;
 	}
-	.section-pic-container {
-		padding-top: 3rem;
+	#about.section-pic-container {
+	margin-top: 3rem;
 		margin-top: 2rem;
+		height: 250px;
+		margin-bottom: 2px;
+		
 	}
 	.section-container {
 		margin-top: -10px;
@@ -158,7 +165,7 @@
 		margin-left: 2rem;
 	}
 	.about-details-container {
-		margin-top: -5rem;
+		margin-top: -10rem;
 	}
 	.about-container {
 		display: flex;

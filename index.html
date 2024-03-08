@@ -65,7 +65,7 @@
 			</div>
 			<div class="section-text">
 				<p class="section-text-p1">Hello, I'am</p>
-				<h1 class="title">Fabrice TUYIZERE</h1>
+				<h1 class="title" id="name">Fabrice TUYIZERE</h1>
 				<p class="section-text-p2">Frontend Developer</p>
 				<div class="break"><h1>hello</h1></div>
 				<div class="btn-container">
@@ -305,8 +305,7 @@
 			/>
 		</section>
 		<section id="Project">
-			<script src="script.js"></script>
-			<p class="section-text-p1">Browse My Recent</p>
+	<p class="section-text-p1">Browse My Recent</p>
 			<h1 class="title">Projects</h1>
 			<div class="experience-all-components-container">
 				<div class="about-container">
@@ -328,7 +327,7 @@
 							</button>
 							<button
 								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com'"
+								onclick="location.href='https://zippy-biscochitos-1e559a.netlify.app/'"
 							>
 								Live Demo
 							</button>
@@ -346,13 +345,13 @@
 						<div class="btn-container">
 							<button
 								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com'"
+								onclick="location.href='https://github.com/fabrice-tuyizere/My_Brand_Fabrice'"
 							>
 								Github
 							</button>
 							<button
 								class="btn btn-color-2 project-btn"
-								onclick="location.href='https://github.com'"
+								onclick="location.href='https://github.com/fabrice-tuyizere/My_Brand_Fabrice'"
 							>
 								Live Demo
 							</button>
@@ -436,25 +435,25 @@
 					</ul>
 				</div>
 				<div class="form-wrapper">
-					<form action="#" method="post">
+					<form action=""  id="contactForm">
 						<h2 class="form-title">Send me a message</h2>
 						<div class="form-fields">
-							<div class="form-group">
-								<input type="text" class="fname" placeholder="First Name" />
+							<div class="form-group" id="fnameGroup">
+								<input type="text" id="fname" placeholder="First Name" />
 							</div>
-							<div class="form-group">
-								<input type="text" class="lname" placeholder="Last Name" />
+							<div class="form-group" id="lnameGroup">
+								<input type="text" id="lname" placeholder="Last Name" />
 							</div>
 
 							
-							<div class="form-group">
-								<input type="email" class="email" placeholder="Email" />
+							<div class="form-group" id="emailGroup">
+								<input type="email" id="email" placeholder="Email" />
 							</div>
-							<div class="form-group">
-								<input type="number" class="phone" placeholder="phone" />
+							<div class="form-group" id="phoneGroup">
+								<input type="text" id="phone" placeholder="phone" />
 							</div>
-							<div class="form-group">
-								<textarea name="message" class="phone" placeholder="Write your message" id=""></textarea>
+							<div class="form-group" id="textGroup">
+								<textarea name="message" class="phone"  placeholder="Write your message" id="message"></textarea>
 							</div>
 						</div>
                         <input type="submit" value="Send message" class="submit-button">
@@ -544,6 +543,6 @@
 	</footer> -->
 
 	</section>
-	<script src="./script.js"></script>
+	<script src="./indescript.js"></script>
 	</body>
 </html>
