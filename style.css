@@ -1046,7 +1046,27 @@ border: none;
 	.submit-button{
 		margin: 10px 0px;
 	}
+
 }
+
+@media only screen and (max-width: 420px){
+	#section-wrapper{
+		align-items: left;
+		
+		padding-left: 0px;
+	}	
+	
+	.box-wrapper{
+		margin-left: -10rem;
+		display: block;
+		align-content:left ;
+		padding-left: -5rem ;
+		flex-direction: column;
+		width: auto;
+	}
+	}
+
+
 
 
 
