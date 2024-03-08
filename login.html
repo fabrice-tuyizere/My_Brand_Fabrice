@@ -4,13 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Login</title>
-				<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="mediaQueries.css" />
-
 	</head>
 	<body>
 		<section id="Login">
-			<p class="title">Welcome Back</p>
+			<p class="title  t1">Welcome Back</p>
 			<div class="login-container">
 				<div class="login-title">
 					<img
@@ -25,10 +24,34 @@
 					</div>
 				</div>
 
-				<form action="">
-					<input type="text" placeholder="Full Name" class="input" />
-					<input type="password" placeholder="Password" class="input" />
-					<input type="submit" value="Login" />
+				<form action="" id="login-form">
+					<input type="text" placeholder="Full Name" class="input" id="name" />
+					<span
+						id="name_error"
+						style="
+							display: block;
+							color: red;
+							margin-top: 0px;
+							margin-left: 0px;
+						"
+					></span>
+					<input
+						type="password"
+						placeholder="Password"
+						class="input"
+						id="password"
+					/>
+					<span
+						id="pass-error"
+						style="
+							display: block;
+							color: red;
+							margin-top: 0px;
+							margin-left: 0px;
+						"
+					></span>
+
+					<input type="submit" value="Login" id="submit" />
 				</form>
 				<div class="after-form">
 					<div id="checkboxContainer">
@@ -49,5 +72,7 @@
 				</div>
 			</div>
 		</section>
+
+		<script src="./script.js"></script>
 	</body>
 </html>
