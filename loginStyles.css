@@ -25,7 +25,7 @@ body{
 .form-box{
     position: relative;
     width: 400px;
-    height: 550px;
+    height: 570px;
     border: 2px solid rgb(116, 76, 76);
     border-radius: 20px;
     backdrop-filter: blur(15px);
@@ -97,7 +97,7 @@ justify-content: space-around;
 }
 .group a:hover{
     font-size: 1rem;
-    color:  rgba(219, 231, 174, 0.5);
+    color:  gray;
 	text-decoration: underline;
 	text-decoration-color: rgba(21, 196, 59, 0.5);
 	text-decoration-thickness: 0.1em;
@@ -124,7 +124,7 @@ justify-content: space-around;
     color: rgb(250, 5, 5);
 margin:0 2rem;
 font-size: large;
-    font-weight:bold;
+    /* font-weight:bold; */
     position: relative;
     top: 25px;
     line-height: 20px;
