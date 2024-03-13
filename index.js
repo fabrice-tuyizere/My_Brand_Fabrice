@@ -87,6 +87,7 @@ function printRegisteredUsers() {
 }
 
 function loginValidation() {
+	
 	const form = document.forms["loginForm"];
 	const resultElement = document.getElementById("login_result");
 
@@ -117,6 +118,13 @@ function loginValidation() {
 	} else {
 		resultElement.innerHTML = "";
 		alert("You are authenticated!");
+		
+		setTimeout(function () {
+			window.location.href = "Dasboard.html"; // Redirect to the dashboard page
+		}, 300);
+		
+		
+		
 		return false;
 	}
 }
