@@ -1,5 +1,6 @@
 function validation() {
 	const popup = document.getElementById("popup");
+	const passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 	const form = document.forms["formfill"];
 	const resultElement = document.getElementById("result");
 
@@ -18,7 +19,7 @@ function validation() {
 		(user) => user.email === form.Email.value
 	);
 
-	if (form.Username.value == "") {
+	if (form.Username.value.trim() == "" || form.Username.value == null) {
 		resultElement.innerHTML = "Enter Username*";
 		return false;
 	} else if (form.Username.value.length <= 6) {
@@ -39,7 +40,13 @@ function validation() {
 	} else if (form.Password.value.length <= 6) {
 		resultElement.innerHTML = "Password must be at least 7 characters*";
 		return false;
-	} else if (form.ConfirmPassword.value == "") {
+	}
+	else if (!form.Password.value.match(passw))
+	{
+		resultElement.innerHTML = "password must include one A-Z a-z 0-9*";
+		return false
+	}
+	 else if (form.ConfirmPassword.value == "") {
 		resultElement.innerHTML = "Enter Confirm password*";
 		return false;
 	} else if (form.ConfirmPassword.value !== form.Password.value) {
