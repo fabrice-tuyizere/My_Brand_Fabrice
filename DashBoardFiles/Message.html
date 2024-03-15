@@ -9,15 +9,16 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		/>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	</head>
 	<body>
-		<section id="menu">
+		<section class="menu" id="Message_menu">
 			<div class="logo">
-				<img src="./Images/Fabrice-t-logo.jpeg  " alt="" />
+				<img src="../Images/Fabrice-t-logo.jpeg  " alt="" />
 				<h2>Fabrice-T</h2>
 			</div>
 			<div class="items">
-				<li><i class="fas fa-edit"></i><a href="">Dashboard</a></li>
+				<li><i class="fas fa-edit"></i><a href="./Dasboard.html">Dashboard</a></li>
 				<li><i class="fa-regular fa-message"></i><a href=""> Messages </a></li>
 				<li><i class="fas fa-th-large"></i><a href="">Comments</a></li>
 				<li><i class="fa-sharp fa-solid fa-blog"></i><a href="">Blogs</a></li>
@@ -25,13 +26,16 @@
 				<li>
 					<i class="fa-solid fa-user"></i><a href="">Users</a>
 				</li>
-				<li><i class="fa-solid fa-right-from-bracket"></i><a href=""> Logout</a></li>
+				<li><i class="fa-solid fa-right-from-bracket"></i><a href="../index.html"> Logout</a></li>
 			</div>
 		</section>
 
 		<section id="interface">
 			<div class="navigation">
 				<div class="n1">
+					<div>
+						<i id="menu-btn" class="fas fa-bars"></i>
+					</div>
 					<div class="search">
 						<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
 						<input type="text" name="" id="" placeholder="Search" />
@@ -39,7 +43,7 @@
 				</div>
 				<div class="profile">
 					<i class="far fa-bell"></i>
-					<img src="./Images/fabrice2ndPic.jpg" alt="" />
+					<img src="../Images/fabrice2ndPic.jpg" alt="" />
 				</div>
 			</div>
 
@@ -79,21 +83,22 @@
 			</div>
 
 			<div class="board">
-				<table width="100%">
+					<table width="100%" id="messageTable">
 					<thead>
 						<tr>
+                            <th>No</th>
 							<td> Name </td>
-							<td> Title </td>
-							<td> Status</td>
+							<td> Address</td>
+							<td> Message</td>
 							<td> Role </td>
 							<dt></dt>
 
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
+						<!-- <tr class="Message_table">
 							<td class="people">
-								<img src="./Images/fabrice2ndPic.jpg" alt="">
+								<img src="../Media/person Icon.png" alt="">
 								<div class="people-de">
 									<h5>Mushi</h5>
 									<p>mushi@gmail.com</p>
@@ -104,12 +109,46 @@
 								<p>A hacker</p>
 							</td>
 							<td class="active"><p>Active</p></td>
-							<td class="role"> Owner </td>
-							<td class="edit"><a href="">Edit</a></td>
-						</tr>
-					</tbody>
-				</table>
+							<td class="role"> User </td>
+							<td class="edit"><a href="">Delete</a></td>
+						</tr> -->
+                        </tbody>
 			</div>
 		</section>
+
+
+		<script>
+			  // Function to toggle menu
+        $('#menu-btn').click(function(){
+            $('#menu').toggleClass("active")
+        });
+
+        // Function to update table from local storage
+        function updateTableFromLocalStorage() {
+            const tableBody = document.querySelector("#messageTable tbody");
+            tableBody.innerHTML = ""; // Clear existing table rows
+            const messages = JSON.parse(localStorage.getItem("messages")) || [];
+            messages.forEach((message,index) => {
+                const newRow = `
+                    <tr>
+                        <td>${index + 1}</td> 
+                        <td>${message.firstName} ${message.lastName}</td>
+                        <td>${message.email}</td>
+                        <td>${message.message}</td>
+                        <td>User</td>
+                        <td><button class="delete-btn">Delete</button></td>
+                    </tr>
+                `;
+                tableBody.innerHTML += newRow;
+            });
+        }
+
+        // Call updateTableFromLocalStorage when the page loads
+        window.addEventListener('load', function() {
+            updateTableFromLocalStorage();
+        });
+			
+		</script>
+        <!-- <script src="../indescript.js"></script> -->
 	</body>
 </html>

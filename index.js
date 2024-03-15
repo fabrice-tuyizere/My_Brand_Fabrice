@@ -127,7 +127,7 @@ function loginValidation() {
 		alert("You are authenticated!");
 		
 		setTimeout(function () {
-			window.location.href = "Dasboard.html"; // Redirect to the dashboard page
+			window.location.href = "DashBoardFiles/Dasboard.html"; // Redirect to the dashboard page
 		}, 300);
 		
 		
