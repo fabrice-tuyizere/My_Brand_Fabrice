@@ -24,7 +24,6 @@ function toggleMenu() {
 
 
 
-
 const contactForm = document.getElementById("contactForm");
 const fname = document.getElementById("fname");
 const lname = document.getElementById("lname");
@@ -122,9 +121,26 @@ if (
 	textArea.style.color = "green";
 	textArea.closest(".form-group").style.boxShadow =
 		"inset 8px 8px 8px #49525a, inset -8px -8px 8px #c9ebae33";
-}
+		 const formData = {
+        firstName: fname.value.trim(),
+        lastName: lname.value.trim(),
+        email: email.value.trim(),
+        phone: phone.value.trim(),
+        message: textArea.value.trim()
+    };
 
+    let messages = JSON.parse(localStorage.getItem("messages")) || [];
+    messages.push(formData);
+    localStorage.setItem("messages", JSON.stringify(messages));
+updateTableFromLocalStorage();
+    alert("Message sent successfully!");
+    contactForm.reset();
+}
 
 });
 
-console.log("Script file loaded successfully!");
+
+
+
+
+console.log("successfully loaded");
